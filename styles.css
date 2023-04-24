@@ -1,0 +1,98 @@
+*{
+    margin: 0 auto;
+    
+  
+}
+
+body{
+    /* background-color: black; */
+    background-image: url(./Images/forescape.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow-y: hidden;
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30vh;
+    height: 72vh;
+    width: 100%;
+}
+
+
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 1vh;
+    flex-direction: row;
+}
+.fa-solid.fa-bars{
+    color: white;
+    padding-right: 98vw;
+}
+
+
+
+/* //////////////////////////////////// */
+
+.container{  
+    display: flex;
+    flex-direction: column;
+    margin-top: 26vh;
+}
+
+.clock{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    margin-bottom: 3vh;
+    font-size: 50px;
+    border-style: groove;
+    border-width: 2px;
+    background-color:rgba(255, 0, 230, 0.26);
+    border-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button{
+    background-color:rgba(255, 0, 230, 0.26);
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 3vh;
+    border: 2px;
+    border-style: solid;
+    padding: 5px;
+    
+}
+
+.counter{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20vh;
+}
+
+
+/* ////////////////////////////////////////// */
+
+
+
+footer{
+    height: 11%;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 10px;
+    padding-top: 0.7vh;
+}
+
