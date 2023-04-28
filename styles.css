@@ -5,14 +5,14 @@
 }
 
 body{
-    /* background-color: black; */
-    background-image: url(./Images/forescape.jfif);
+    background-color: black; 
+    /* background-image: url(./Images/forescape.jfif); */
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .container{
@@ -61,7 +61,13 @@ header{
     border-color: white;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 0px 3px rgb(135, 19, 123), 3px 4px 4px rgba(0,0,0,0.2);
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+
 
 .button{
     background-color:rgba(255, 0, 230, 0.26);
@@ -69,11 +75,36 @@ header{
     color: white;
     font-size: 30px;
     margin-bottom: 3vh;
-    border: 2px;
-    border-style: solid;
     padding: 5px;
-    
+    box-shadow: 5px 5px 0px 0px rgba(177, 20, 162, 0.26), 3px 4px 4px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+
+.text{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+    margin-bottom: 2vh;
+    padding: 1vw;
+}
+
+
+.buttonBreak{
+    background-color:rgba(55, 167, 227, 0.579);
+    box-shadow: 5px 5px 0px 0px rgba(48, 115, 142, 0.429), 3px 4px 4px rgba(0,0,0,0.2);
+}
+
+  
+.active {
+    transform: translateY(3px);   
+    box-shadow: none;
+}
+
 
 .counter{
     font-family: 'Press Start 2P', cursive;
@@ -95,4 +126,54 @@ footer{
     font-size: 10px;
     padding-top: 0.7vh;
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+                                 /* SIDEBAR */
+.sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(155, 74, 133);
+    border: 2px solid rgb(48, 11, 35);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rebeccapurple;
+    color: white;
+}
+input{
+    background-color: rgb(151, 71, 71);
+    color: white;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    max-width: 60%;
+    text-align: center;
+    
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.475);
+}
+
+label{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+.close{
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 6px;
+}
+
+
+
+
 

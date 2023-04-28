@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque&family=Hanken+Grotesk:wght@500;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/716acd55b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -18,20 +19,39 @@
         
     </header>
     <audio type="audio/mp3" src="./Sound/alarm.mp3" autoplay></audio>
+    <audio class="switch" type="audio/mp3" src="./Sound/switch.mp3" autoplay></audio>
     <section class="container">
-        <div class="clock">
-            01:00
+        <div class="text">Work Time!</div>
+
+        <div class="clock animate__animated">
+            25:00
         </div>
         <div class="button">
-            START
+             START
         </div>
-        <div class="counter">#0</div>
+        
+        <div class="counter ">#0</div>
+        <div class="sideBar animate__animated animate__slideInLeft animate__slower ">
+            <i class="fa-sharp fa-regular fa-rectangle-xmark fa-2x close"></i>
+            <label for="workTime">Pomodoro</label>
+            <input type="number" placeholder="25" name="workTime" id="workTime">
+            <label for="breakTime">Short Break Minutes</label>
+            <input type="number" placeholder="5" name="breakTime" id="breakTime">
+            <label for="longBreakTime">Long Break Minutes</label>
+            <input type="number" placeholder="15" name="longBreakTime" id="longBreakTime">
+            <label for="maxLapse">Long Break Interval</label>
+            <input type="number" placeholder="4" name="maxLapse" id="maxLapse">
+        </div>
     </section>
+
+  
+
     <footer>
         Coded by Log_4n
     </footer>
     
     <script src="./main.js"></script>
+    <script src="./config.js"></script>
 </body>
 
 </html>
